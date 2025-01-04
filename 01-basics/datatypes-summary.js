@@ -34,4 +34,33 @@ console.log(typeof myFunction);
 // Null : Object
 // Boolean : boolean
 // string : string
-// 
+
+
+
+// ++++++++++++++++++++++++++++++++++++
+
+// Stack(Primitive), Heap (Non-Primitive)
+// stack se jab ham reference lete hai toh copy value milta h
+
+// heap se jab ham reference lete hai toh copy nhi original value milta hai
+
+let myName = "hitesh"
+
+let anotherName = myName
+anotherName = 'Anshul'
+
+
+console.log(myName);
+console.log(anotherName);
+
+let userOne = {
+    email: 'user@gmail.com',
+    upi: 'user@ybl'
+}
+
+let userTwo = userOne
+
+userOne.email = 'anshulchaurasiya@gmail.com'
+
+console.log(userTwo)
+console.log(userOne)
