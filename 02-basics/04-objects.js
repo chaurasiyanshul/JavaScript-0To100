@@ -27,7 +27,7 @@ const obj2 = {3: "a", 4: "b"};
 // const obj3 = Object.assign(obj1, obj2)
 
 const obj3 = {...obj1, ...obj2};  // universal method
-console.log(obj3)
+// console.log(obj3)
 
 
 const users = [
@@ -39,7 +39,22 @@ const users = [
 ]
 
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser))
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser))
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'))
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'))
+
+const course = {
+    coursename : "Js in Hindi",
+    price: "999",
+    courseInstructor : "hitesh"
+}
+
+// course.courseInstructor  basic method for accessing the value
+// Another method 
+
+const {courseInstructor : instructor } = course        // object destructuring
+
+// console.log(courseInstructor);
+console.log(instructor)
+
