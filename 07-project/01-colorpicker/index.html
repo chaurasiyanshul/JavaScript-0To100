@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            margin: 0%;
+        }
+
+        span{
+            display: block;
+        }
+
+        .container{
+            text-align: center;
+            margin: 100px auto 100px;
+            width: 80%;
+
+        }
+
+        .button{
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            border: 1px solid black;
+        }
+
+        #grey {
+          background: grey;
+        }
+        
+        #white {
+          background: white;
+        }
+        #blue {
+          background: blue;
+        }
+        #yellow {
+          background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Color Scheme Switcher</h1>
+        <span class="button" id="grey"></span>
+        <span class="button" id="white"></span>
+        <span class="button" id="blue"></span>
+        <span class="button" id="yellow"></span>
+        <h2>Try clicking on One of the Colors above 
+            <span>To change to background color of this page !</span>
+        </h2>
+    </div>
+</body>
+<script src="colorpicker.js"></script>
+</html>
